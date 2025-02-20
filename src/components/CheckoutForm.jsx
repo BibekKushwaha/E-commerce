@@ -22,7 +22,7 @@ export const action =
       chargeTotal: orderTotal,
       orderTotal: formatPrice(orderTotal),
       cartItems,
-      numItemInCart,
+      numItemsInCart:numItemInCart
     };
     try {
       const response = await customFetch.post('/orders',
